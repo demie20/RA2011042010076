@@ -12,13 +12,13 @@ headers = {"Content-Type": "application/json"}
 def get_auth_token():
     url = "http://20.244.56.144/train/auth"
     data = {
-        "companyName": "Train Central",
-        "clientID": "b46118f0-fbde-4b16-a4bl-6ae6ad718b27",
-        "ownerName": "Rahul",
-        "ownertmail": "rahul@abc.edu",
-        "rollNo": "1",
-        "clientSecret": "XOyolORPasKWOdAN",
-    }
+	"companyName": "Janvi Travels",
+	"clientID": "a715fcdc-dae7-437b-9d0f-98ad6ed6e232",
+	"clientSecret": "gZHBrygpEwTtSVun",
+	"ownerName": "Janvi Somani",
+	"ownerEmail": "js0182@srmist.edu.in",
+	"rollNo": "RA2011042010076"
+}
     response = requests.post(url, headers=headers, data=json.dumps(data))
     response_data = json.loads(response.text)
     return response_data["Authorization"]
