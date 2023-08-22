@@ -18,7 +18,8 @@ def numbers():
                 if num not in nums:
                     nums.append(num)
         except Exception as e:
-            print(e)
+            # print(e)
+            pass
 
     nums = sorted(nums)
 
